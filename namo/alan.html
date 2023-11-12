@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você me ama mais que eu te amo?</title>
+    <style>
+        body {
+            background-color: rgba(230, 87, 87, 0.74);
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .center{
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin: 0 20px;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .img{
+            display: block;
+            background-image: url('https://img.freepik.com/vetores-gratis/casal-de-amantes-segurando-a-ler-o-coracao-juntos_56104-389.jpg?w=900&t=st=1686504422~exp=1686505022~hmac=2b3d7bbbd7d9cf82740fd1fb2460fd15025fd1b510cfcd0ed688ef7a08aab5b6');
+            background-size: cover;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <div class="center">
+        <h1>Você me ama mais que eu te amo?</h1>
+    </div>
+    <div class="img"></div>
+    <div class="btn">
+        <button id="nao"><a href="alan2.html" >Não</a></button>
+        <button id="sim">Sim</button>
+    </div>
+</body>
+<script>
+    const naoBtn = document.querySelector('#sim');
+    const simBtn = document.querySelector('#nao');
+    const img = document.querySelector('.img');
+
+    simBtn.addEventListener('mouseover', ()=>{
+        img.style.backgroundImage = "url('https://img.freepik.com/vetores-gratis/linda-garota-da-seu-coracao-para-o-namorado-feliz-dia-dos-namorados-ilustracao-de-personagem-de-desenho-animado_56104-375.jpg?w=900&t=st=1686504469~exp=1686505069~hmac=bd1601ae1ddecea94fcfffa474d456513d6c590c31d7c4816445e31bd8ab22ea')"
+    });
+    simBtn.addEventListener('mouseout', ()=>{
+        img.style.backgroundImage = "url('https://img.freepik.com/vetores-gratis/casal-de-amantes-segurando-a-ler-o-coracao-juntos_56104-389.jpg?w=900&t=st=1686504422~exp=1686505022~hmac=2b3d7bbbd7d9cf82740fd1fb2460fd15025fd1b510cfcd0ed688ef7a08aab5b6')"
+    });
+    naoBtn.addEventListener('mouseover', ()=>{
+       naoBtn.style.position = 'absolute';
+        naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        naoBtn.style.top = Math.floor(Math.random() * window.innerHeight) + "px"; 
+    });
+</script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="alan3.css">
+  <title>Página Romântica</title>
+  <style>
+    @font-face {
+      font-family: 'Great Vibes';
+      src: url('caminho_para_a_fonte/GreatVibes-Regular.ttf');
+    }
+
+    body {
+      background: linear-gradient(to bottom, #550202, #3a0101);
+      font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<style>
+    /* Estilos CSS */
+    h1 {
+      font-size: 50px;
+      overflow: hidden; /* Garante que o texto não seja exibido totalmente no início */
+      border-right: 3px solid #ffffff; /* Simula o cursor de digitação */
+      white-space: nowrap; /* Impede quebra de linha */
+      margin: 0 auto; /* Centraliza o elemento */
+      letter-spacing: 4px; /* Espaçamento entre letras */
+      animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite; /* Adiciona animação de máquina de escrever */
+    }
+
+    /* Animação de máquina de escrever */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* Animação do cursor de digitação */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #ffffff }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="typed-text"></h1>
+
+  <script>
+    // JavaScript para o efeito de máquina de escrever
+    const text = "Jozi e Alan - 18 anos de história!";
+    let index = 0;
+    let speed = 100; // Velocidade de digitação (em milissegundos)
+
+    function type() {
+      if (index < text.length) {
+        document.getElementById("typed-text").textContent += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      }
+    }
+
+    // Inicia o efeito de máquina de escrever
+    window.onload = type;
+  </script>
+<body>
+  
+  <p>Hoje, neste dia dos namorados, quero expressar o quanto sou feliz por estarmos juntos há quase 18 anos. Cada dia ao seu lado é um presente valioso que a vida me deu.</p>
+  <p>Você é uma pessoa incrível, um homem maravilhoso que sempre me tratou como uma princesa. Sua gentileza, carinho e amor incondicional enchem meu coração de gratidão. És uma pessoa linda, tanto por fora como por dentro, cheia de qualidades que admiro profundamente.</p>
+  <p>Ao longo de nossa jornada, compartilhamos risos, lágrimas, conquistas e desafios. E em cada momento, você esteve ao meu lado, apoiando-me e sendo meu porto seguro. Sua presença me traz conforto e paz, e eu me sinto completa com você ao meu lado.</p>
+  <p>Desejo, do fundo do meu coração, que você alcance tudo o que deseja e que todos os seus sonhos se realizem. Você merece toda a felicidade do mundo, pois é uma pessoa de luz e inspiração para mim e para todos que têm a sorte de conhecê-lo.</p>
+  <p>Minha vida é infinitamente feliz com você, quero que continuemos juntos construindo um futuro repleto de amor e alegria. Que possamos comemorar muitos e muitos dias dos namorados juntos, renovando nosso amor e celebrando a nossa cumplicidade.</p>
+  <p>Saiba que a cada batida do meu coração, é o seu nome que ecoa dentro de mim. Eu te amo mais do que as palavras podem expressar, e sou grata todos os dias por ter você como meu marido, meu companheiro e minha fonte constante de felicidade.</p>
+  <p>Com todo o meu amor,</p>
+  <p>Jozi Oliveira.</p>
+  <p></p>
+  <p></p>
+  <img src="img/5.jpg" alt="Imagem romântica">
+  <img src="img/5pb1.jpg" alt="Imagem romântica1">
+  <img src="img/500.jpg" alt="Imagem romântica2">
+  <img src="img/Alan+Joziane Vila Velha-79.jpg" alt="Imagem romântica3">
+  <img src="img/101.jpg" alt="Imagem romântica4">
+  <img src="img/51.jpg" alt="Imagem romântica5">
+</body>
+</html>
+
